@@ -5,7 +5,7 @@ from MQ135 import MQ135
 
 
 # setup
-mq135 = MQ135(0) # analog PIN 0
+mq135 = MQ135(Pin(0)) # analog PIN 0
 dht11 = DHT11(Pin(4)) # D2
 
 # loop
