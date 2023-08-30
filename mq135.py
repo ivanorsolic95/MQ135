@@ -66,7 +66,7 @@ class MQ135(object):
 
     def get_ppm(self):
         """Returns the ppm of CO2 sensed (assuming only CO2 in the air)"""
-        return self.PARA * math.pow((self.get_resistance()/ self.RZERO), -self.PARB)
+        return self.PARA * (self.get_resistance()/ self.RZERO)**-self.PARB
 
     def get_corrected_ppm(self, temperature, humidity):
         """Returns the ppm of CO2 sensed (assuming only CO2 in the air)
